@@ -12,6 +12,8 @@ public protocol BulletStylingRule: ItemStyling {
     var bulletFont: UIFont? { get }
     /// Color to use for the bullet
     var bulletColor: UIColor? { get }
+    /// Number of spaces to separate bullet from text
+    var bulletPadding: Int { get }
     /// Optional image as bullet instead of a font
     var bulletImage: UIImage? { get }
     /// Array of bullet images, each item in the array is used for deeper level nesting
