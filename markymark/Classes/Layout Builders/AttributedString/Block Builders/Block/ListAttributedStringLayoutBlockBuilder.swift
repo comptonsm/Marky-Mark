@@ -46,10 +46,12 @@ private extension ListAttributedStringLayoutBlockBuilder {
             let bulletStyling = styling as? BulletStylingRule
             let listStyling = styling as? ListItemStylingRule
 
+            let bulletString = getBulletCharacter(listItem, styling: bulletStyling)
+
             let listItemAttributedString = NSMutableAttributedString()
-            listItemAttributedString.append(getBulletCharacter(listItem, styling: bulletStyling))
+            listItemAttributedString.append(bulletString)
             listItemAttributedString.addAttributes(
-                getBulletIndentingAttributesForLevel(level, listStyling: listStyling),
+                getBulletIndentingAttributesForLevel(level, listStyling: listStyling, bullet: bulletString),
                 range: listItemAttributedString.fullRange()
             )
 
@@ -66,14 +68,16 @@ private extension ListAttributedStringLayoutBlockBuilder {
         return listAttributedString
     }
 
+
     func getBulletCharacter(_ listMarkDownItem: ListMarkDownItem, styling: BulletStylingRule?) -> NSAttributedString {
 
         let string: String
+        let padding = String(repeating: " ", count: styling?.bulletPadding ?? 1)
 
         if let indexCharacter = listMarkDownItem.indexCharacter {
-            string = indexCharacter + " "
+            string = indexCharacter + padding
         } else {
-            string = "• "
+            string = "•" + padding
         }
 
         return NSMutableAttributedString(string: string, attributes: getBulletStylingAttributes(styling))
@@ -93,13 +97,14 @@ private extension ListAttributedStringLayoutBlockBuilder {
         return attributes
     }
 
-    func getBulletIndentingAttributesForLevel(_ level: CGFloat, listStyling: ListItemStylingRule?) -> [NSAttributedString.Key: Any] {
+    func getBulletIndentingAttributesForLevel(_ level: CGFloat, listStyling: ListItemStylingRule?, bullet: NSAttributedString) -> [NSAttributedString.Key: Any] {
         let listIndentSpace = (listStyling?.listIdentSpace ?? 0)
+        let indentation = bullet.size().width
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.paragraphSpacing = (listStyling?.bottomListItemSpacing ?? 0)
         paragraphStyle.firstLineHeadIndent = listIndentSpace * level
-        paragraphStyle.headIndent = listIndentSpace + listIndentSpace * level
+        paragraphStyle.headIndent = indentation + listIndentSpace * level
 
         return [.paragraphStyle: paragraphStyle]
     }
