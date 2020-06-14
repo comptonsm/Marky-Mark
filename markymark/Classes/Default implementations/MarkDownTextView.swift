@@ -34,6 +34,13 @@ open class MarkDownTextView: UIView {
             render(withMarkdownText: text)
         }
     }
+    
+    public var textViewDelegate: UITextViewDelegate? {
+        didSet {
+            (viewConfiguration as? MarkDownAsAttributedStringViewConfiguration)?.textViewDelegate = textViewDelegate
+            render(withMarkdownText: text)
+        }
+    }
 
     fileprivate var markDownView: UIView?
     fileprivate var markDownItems: [MarkDownItem] = []
@@ -147,8 +154,9 @@ private class MarkDownAsViewViewConfiguration: CanConfigureViews {
     }
 }
 
-private struct MarkDownAsAttributedStringViewConfiguration: CanConfigureViews {
+private class MarkDownAsAttributedStringViewConfiguration: CanConfigureViews {
 
+    weak var textViewDelegate: UITextViewDelegate?
     private weak var owner: MarkDownTextView?
 
     init(owner: MarkDownTextView) {
@@ -167,6 +175,7 @@ private struct MarkDownAsAttributedStringViewConfiguration: CanConfigureViews {
         textView.isEditable = false
         textView.textContainerInset = .zero
         textView.textContainer.lineFragmentPadding = 0
+        textView.delegate = textViewDelegate
 
         textView.attributedText = attributedString
         textView.dataDetectorTypes = [.phoneNumber, .link]
