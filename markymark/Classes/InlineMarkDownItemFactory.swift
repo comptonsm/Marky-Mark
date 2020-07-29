@@ -104,21 +104,36 @@ class InlineMarkDownItemFactory {
     }
 
     private func removedNestedRules(_ ruleRangePairs: [RuleRangePair]) -> [RuleRangePair] {
-
+        // Check all existing ranges instead of just the previous one
+        // Fixes a bug where links with multiple underscores incorrectly add italic text
         var filteredRuleRangePairs: [RuleRangePair] = []
-
-        var previousRange: NSRange?
+        var existingRanges: [NSRange] = []
 
         for ruleRangePair in ruleRangePairs {
-
-            if !ruleRangePair.range.isOverlappingWithRange(previousRange) || previousRange == nil {
+            let range = ruleRangePair.range
+            if !existingRanges.contains(where: { $0.isOverlappingWithRange(range) }) {
                 filteredRuleRangePairs.append(ruleRangePair)
+                existingRanges.append(range)
             }
-
-            previousRange = ruleRangePair.range
         }
 
         return filteredRuleRangePairs
+
+        // Previous code:
+//        var filteredRuleRangePairs: [RuleRangePair] = []
+//
+//        var previousRange: NSRange?
+//
+//        for ruleRangePair in ruleRangePairs {
+//
+//            if !ruleRangePair.range.isOverlappingWithRange(previousRange) || previousRange == nil {
+//                filteredRuleRangePairs.append(ruleRangePair)
+//            }
+//
+//            previousRange = ruleRangePair.range
+//        }
+//
+//        return filteredRuleRangePairs
     }
 
     private func addMissingRuleRangePairs(_ ruleRangePairs: [RuleRangePair], contentLength: Int) -> [RuleRangePair] {
