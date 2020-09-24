@@ -177,6 +177,10 @@ private class MarkDownAsAttributedStringViewConfiguration: CanConfigureViews {
         textView.textContainer.lineFragmentPadding = 0
         textView.delegate = textViewDelegate
 
+        if #available(iOS 10.0, *) {
+            textView.adjustsFontForContentSizeCategory = true
+        }
+
         textView.attributedText = attributedString
         textView.dataDetectorTypes = [.phoneNumber, .link]
         textView.attributedText = attributedString

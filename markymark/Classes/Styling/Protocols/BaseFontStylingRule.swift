@@ -45,7 +45,12 @@ private extension UIFont {
 
     func makeBold() -> UIFont? {
         if let descriptor = fontDescriptor.withSymbolicTraits(.traitBold) {
-            return UIFont(descriptor: descriptor, size: pointSize)
+            if #available(iOS 11.0, *) {
+                return UIFontMetrics.default.scaledFont(for: UIFont(descriptor: descriptor, size: pointSize))
+            } else {
+                return UIFont(descriptor: descriptor, size: pointSize)
+            }
+
         }
 
         return nil
@@ -53,7 +58,12 @@ private extension UIFont {
 
     func makeItalic() -> UIFont? {
         if let descriptor = fontDescriptor.withSymbolicTraits(.traitItalic) {
-            return UIFont(descriptor: descriptor, size: pointSize)
+            if #available(iOS 11.0, *) {
+                return UIFontMetrics.default.scaledFont(for: UIFont(descriptor: descriptor, size: pointSize))
+            } else {
+                return UIFont(descriptor: descriptor, size: pointSize)
+            }
+
         }
 
         return nil
@@ -61,13 +71,22 @@ private extension UIFont {
 
     func makeItalicBold() -> UIFont? {
         if let descriptor = fontDescriptor.withSymbolicTraits([.traitItalic, .traitBold]) {
-            return UIFont(descriptor: descriptor, size: pointSize)
+            if #available(iOS 11.0, *) {
+                return UIFontMetrics.default.scaledFont(for: UIFont(descriptor: descriptor, size: pointSize))
+            } else {
+                return UIFont(descriptor: descriptor, size: pointSize)
+            }
         }
 
         return nil
     }
 
     func changeSize(_ size: CGFloat) -> UIFont {
-        return UIFont(descriptor: self.fontDescriptor.withSize(size), size: size)
+        if #available(iOS 11.0, *) {
+            return UIFontMetrics.default.scaledFont(
+                for: UIFont(descriptor: self.fontDescriptor.withSize(size), size: size))
+        } else {
+            return UIFont(descriptor: self.fontDescriptor.withSize(size), size: size)
+        }
     }
 }
