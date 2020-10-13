@@ -105,7 +105,9 @@ open class MarkDownTextView: UIView {
             return
         }
 
-        markDownItems = markyMark.parseMarkDown(markdownText)
+        markDownItems = markyMark.parseMarkDown(markdownText) { [weak self] in
+            self?.viewConfiguration?.configureViews()
+        }
         viewConfiguration?.configureViews()
     }
 }
@@ -177,7 +179,6 @@ private class MarkDownAsAttributedStringViewConfiguration: CanConfigureViews {
         textView.textContainer.lineFragmentPadding = 0
         textView.delegate = textViewDelegate
         textView.adjustsFontForContentSizeCategory = true
-        textView.attributedText = attributedString
         textView.dataDetectorTypes = [.phoneNumber, .link]
         textView.attributedText = attributedString
 

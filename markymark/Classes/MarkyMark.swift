@@ -7,6 +7,9 @@ import Foundation
 
 open class MarkyMark {
 
+    /// Default completion handler with no arguments
+    public typealias CompletionHandler = () -> Void
+
     /// Mark down flavor to use for parsing markdown
     var flavor: Flavor?
 
@@ -123,7 +126,7 @@ open class MarkyMark {
      - returns: Array of MarkDownItem created by the given Rules
      */
 
-    open func parseMarkDown(_ markDown: String) -> [MarkDownItem] {
+    open func parseMarkDown(_ markDown: String, completion: CompletionHandler? = nil) -> [MarkDownItem] {
 
         let markDownLines = MarkDownLines(markDown)
         var markDownItems: [MarkDownItem] = []
@@ -146,6 +149,7 @@ open class MarkyMark {
                 }
             }
 
+            markDownItem.onAsyncComplete = completion
             markDownItems.append(markDownItem)
             markDownLines.removeLinesForMarkDownItem(markDownItem)
         }
