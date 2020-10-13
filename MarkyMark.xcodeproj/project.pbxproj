@@ -1,0 +1,1739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_265 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_188 /* CacheSerializer.swift */; };
+		OBJ_266 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_189 /* DiskStorage.swift */; };
+		OBJ_267 /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_190 /* FormatIndicatedCacheSerializer.swift */; };
+		OBJ_268 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_191 /* ImageCache.swift */; };
+		OBJ_269 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_192 /* MemoryStorage.swift */; };
+		OBJ_270 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_193 /* Storage.swift */; };
+		OBJ_271 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_195 /* ImageView+Kingfisher.swift */; };
+		OBJ_272 /* NSButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_196 /* NSButton+Kingfisher.swift */; };
+		OBJ_273 /* NSTextAttachment+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_197 /* NSTextAttachment+Kingfisher.swift */; };
+		OBJ_274 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_198 /* UIButton+Kingfisher.swift */; };
+		OBJ_275 /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_199 /* WKInterfaceImage+Kingfisher.swift */; };
+		OBJ_276 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_201 /* Deprecated.swift */; };
+		OBJ_277 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_203 /* AVAssetImageDataProvider.swift */; };
+		OBJ_278 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_204 /* ImageDataProvider.swift */; };
+		OBJ_279 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_205 /* Resource.swift */; };
+		OBJ_280 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_206 /* Source.swift */; };
+		OBJ_281 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_207 /* Kingfisher.swift */; };
+		OBJ_282 /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_208 /* KingfisherError.swift */; };
+		OBJ_283 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_209 /* KingfisherManager.swift */; };
+		OBJ_284 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_210 /* KingfisherOptionsInfo.swift */; };
+		OBJ_285 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_212 /* Filter.swift */; };
+		OBJ_286 /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_213 /* GIFAnimatedImage.swift */; };
+		OBJ_287 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_214 /* Image.swift */; };
+		OBJ_288 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_215 /* ImageDrawing.swift */; };
+		OBJ_289 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_216 /* ImageFormat.swift */; };
+		OBJ_290 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_217 /* ImageProcessor.swift */; };
+		OBJ_291 /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_218 /* ImageProgressive.swift */; };
+		OBJ_292 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_219 /* ImageTransition.swift */; };
+		OBJ_293 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_220 /* Placeholder.swift */; };
+		OBJ_294 /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_222 /* AuthenticationChallengeResponsable.swift */; };
+		OBJ_295 /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_223 /* ImageDataProcessor.swift */; };
+		OBJ_296 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_224 /* ImageDownloader.swift */; };
+		OBJ_297 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_225 /* ImageDownloaderDelegate.swift */; };
+		OBJ_298 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_226 /* ImageModifier.swift */; };
+		OBJ_299 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_227 /* ImagePrefetcher.swift */; };
+		OBJ_300 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_228 /* RedirectHandler.swift */; };
+		OBJ_301 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_229 /* RequestModifier.swift */; };
+		OBJ_302 /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_230 /* RetryStrategy.swift */; };
+		OBJ_303 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_231 /* SessionDataTask.swift */; };
+		OBJ_304 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_232 /* SessionDelegate.swift */; };
+		OBJ_305 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_234 /* Box.swift */; };
+		OBJ_306 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_235 /* CallbackQueue.swift */; };
+		OBJ_307 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_236 /* Delegate.swift */; };
+		OBJ_308 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_237 /* ExtensionHelpers.swift */; };
+		OBJ_309 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_238 /* Result.swift */; };
+		OBJ_310 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_239 /* Runtime.swift */; };
+		OBJ_311 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_240 /* SizeExtensions.swift */; };
+		OBJ_312 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_241 /* String+MD5.swift */; };
+		OBJ_313 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_243 /* AnimatedImageView.swift */; };
+		OBJ_314 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_244 /* Indicator.swift */; };
+		OBJ_321 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_249 /* Package.swift */; };
+		OBJ_327 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_246 /* Delegate.swift */; };
+		OBJ_328 /* ImageBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_247 /* ImageBinder.swift */; };
+		OBJ_329 /* KFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_248 /* KFImage.swift */; };
+		OBJ_331 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kingfisher::Kingfisher::Product" /* Kingfisher.framework */; };
+		OBJ_338 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_344 /* AttributedLabelFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AttributedLabelFlavor.swift */; };
+		OBJ_345 /* AttributedLabelStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* AttributedLabelStyling.swift */; };
+		OBJ_346 /* MarkdownAttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MarkdownAttributedLabel.swift */; };
+		OBJ_347 /* CanConfigureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* CanConfigureViews.swift */; };
+		OBJ_348 /* MarkDownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MarkDownTextView.swift */; };
+		OBJ_349 /* DefaultURLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DefaultURLOpener.swift */; };
+		OBJ_350 /* ExtensionContextURLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ExtensionContextURLOpener.swift */; };
+		OBJ_351 /* AttributedStringComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AttributedStringComposer.swift */; };
+		OBJ_352 /* ElementComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ElementComposer.swift */; };
+		OBJ_353 /* InlineAttributedStringComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* InlineAttributedStringComposer.swift */; };
+		OBJ_354 /* StringComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* StringComposer.swift */; };
+		OBJ_355 /* ViewAppenderComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* ViewAppenderComposer.swift */; };
+		OBJ_356 /* NSAttributedString+FullRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* NSAttributedString+FullRange.swift */; };
+		OBJ_357 /* NSRange+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* NSRange+extensions.swift */; };
+		OBJ_358 /* NSRegularExpression+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* NSRegularExpression+extensions.swift */; };
+		OBJ_359 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* String+extensions.swift */; };
+		OBJ_360 /* URL+addHTTPSIfSchemeIsMissing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* URL+addHTTPSIfSchemeIsMissing.swift */; };
+		OBJ_361 /* ContentfulFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ContentfulFlavor.swift */; };
+		OBJ_362 /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Flavor.swift */; };
+		OBJ_363 /* InlineMarkDownItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* InlineMarkDownItemFactory.swift */; };
+		OBJ_364 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_365 /* HeaderAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* HeaderAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_366 /* ListAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ListAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_367 /* OrderedListAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* OrderedListAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_368 /* ParagraphAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ParagraphAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_369 /* QuoteAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* QuoteAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_370 /* ContainerAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* ContainerAttributedStringBlockBuilder.swift */; };
+		OBJ_371 /* BoldAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* BoldAttributedStringBlockBuilder.swift */; };
+		OBJ_372 /* CodeAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* CodeAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_373 /* ImageAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ImageAttributedStringBlockBuilder.swift */; };
+		OBJ_374 /* InlineAttributedStringLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* InlineAttributedStringLayoutBlockBuilder.swift */; };
+		OBJ_375 /* InlineCodeAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* InlineCodeAttributedStringBlockBuilder.swift */; };
+		OBJ_376 /* InlineImageAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* InlineImageAttributedStringBlockBuilder.swift */; };
+		OBJ_377 /* InlineTextAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* InlineTextAttributedStringBlockBuilder.swift */; };
+		OBJ_378 /* ItalicAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ItalicAttributedStringBlockBuilder.swift */; };
+		OBJ_379 /* StrikeThroughAttributedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* StrikeThroughAttributedStringBlockBuilder.swift */; };
+		OBJ_380 /* TextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* TextAttachment.swift */; };
+		OBJ_381 /* LayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* LayoutBlockBuilder.swift */; };
+		OBJ_382 /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* LayoutBuilder.swift */; };
+		OBJ_383 /* AlphabeticListLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* AlphabeticListLayoutBlockBuilder.swift */; };
+		OBJ_384 /* CodeViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* CodeViewLayoutBlockBuilder.swift */; };
+		OBJ_385 /* HeaderViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* HeaderViewLayoutBlockBuilder.swift */; };
+		OBJ_386 /* HorizontalLineLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* HorizontalLineLayoutBlockBuilder.swift */; };
+		OBJ_387 /* ImageViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* ImageViewLayoutBlockBuilder.swift */; };
+		OBJ_388 /* ListViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ListViewLayoutBlockBuilder.swift */; };
+		OBJ_389 /* OrderedListLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* OrderedListLayoutBlockBuilder.swift */; };
+		OBJ_390 /* ParagraphViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ParagraphViewLayoutBlockBuilder.swift */; };
+		OBJ_391 /* QuoteBlockLayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* QuoteBlockLayoutBuilder.swift */; };
+		OBJ_392 /* InlineAttributedStringViewLayoutBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* InlineAttributedStringViewLayoutBlockBuilder.swift */; };
+		OBJ_393 /* LinkLayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* LinkLayoutBuilder.swift */; };
+		OBJ_394 /* AttributedInteractiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* AttributedInteractiveLabel.swift */; };
+		OBJ_395 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ContainerView.swift */; };
+		OBJ_396 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* LineView.swift */; };
+		OBJ_397 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ListItemView.swift */; };
+		OBJ_398 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ListView.swift */; };
+		OBJ_399 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* RemoteImageView.swift */; };
+		OBJ_400 /* AutolayoutViewAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* AutolayoutViewAppender.swift */; };
+		OBJ_401 /* ListMarkDownItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* ListMarkDownItemFactory.swift */; };
+		OBJ_402 /* AlphabeticallyOrderedMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* AlphabeticallyOrderedMarkDownItem.swift */; };
+		OBJ_403 /* BoldItalicMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* BoldItalicMarkDownItem.swift */; };
+		OBJ_404 /* BoldMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* BoldMarkDownItem.swift */; };
+		OBJ_405 /* CodeBlockMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* CodeBlockMarkDownItem.swift */; };
+		OBJ_406 /* HeaderMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* HeaderMarkDownItem.swift */; };
+		OBJ_407 /* HorizontalLineMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* HorizontalLineMarkDownItem.swift */; };
+		OBJ_408 /* ImageBlockMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ImageBlockMarkDownItem.swift */; };
+		OBJ_409 /* ImageMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ImageMarkDownItem.swift */; };
+		OBJ_410 /* InlineCodeMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* InlineCodeMarkDownItem.swift */; };
+		OBJ_411 /* InlineMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* InlineMarkDownItem.swift */; };
+		OBJ_412 /* InlineTextMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* InlineTextMarkDownItem.swift */; };
+		OBJ_413 /* ItalicMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* ItalicMarkDownItem.swift */; };
+		OBJ_414 /* LinkMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* LinkMarkDownItem.swift */; };
+		OBJ_415 /* ListMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* ListMarkDownItem.swift */; };
+		OBJ_416 /* MarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* MarkDownItem.swift */; };
+		OBJ_417 /* OrderedMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* OrderedMarkDownItem.swift */; };
+		OBJ_418 /* ParagraphMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* ParagraphMarkDownItem.swift */; };
+		OBJ_419 /* QuoteMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* QuoteMarkDownItem.swift */; };
+		OBJ_420 /* StrikeMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* StrikeMarkDownItem.swift */; };
+		OBJ_421 /* UnorderedListMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* UnorderedListMarkDownItem.swift */; };
+		OBJ_422 /* MarkDownLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* MarkDownLines.swift */; };
+		OBJ_423 /* MarkyMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* MarkyMark.swift */; };
+		OBJ_424 /* HasIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* HasIndex.swift */; };
+		OBJ_425 /* HasLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* HasLevel.swift */; };
+		OBJ_426 /* HasListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* HasListItems.swift */; };
+		OBJ_427 /* URLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* URLOpener.swift */; };
+		OBJ_428 /* MarkDownConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* MarkDownConverterConfiguration.swift */; };
+		OBJ_429 /* MarkDownToAttributedStringConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* MarkDownToAttributedStringConverterConfiguration.swift */; };
+		OBJ_430 /* MarkDownToInlineAttributedStringConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* MarkDownToInlineAttributedStringConverterConfiguration.swift */; };
+		OBJ_431 /* MarkdownToViewConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* MarkdownToViewConverterConfiguration.swift */; };
+		OBJ_432 /* MarkDownConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* MarkDownConverter.swift */; };
+		OBJ_433 /* RuleRangePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* RuleRangePair.swift */; };
+		OBJ_434 /* BlockQuoteRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* BlockQuoteRule.swift */; };
+		OBJ_435 /* CodeBlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* CodeBlockRule.swift */; };
+		OBJ_436 /* HeaderRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* HeaderRule.swift */; };
+		OBJ_437 /* HorizontalLineRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* HorizontalLineRule.swift */; };
+		OBJ_438 /* ImageBlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* ImageBlockRule.swift */; };
+		OBJ_439 /* AlphabeticListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* AlphabeticListType.swift */; };
+		OBJ_440 /* OrderedListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* OrderedListType.swift */; };
+		OBJ_441 /* UnOrderedListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* UnOrderedListType.swift */; };
+		OBJ_442 /* ListRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* ListRule.swift */; };
+		OBJ_443 /* ListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* ListType.swift */; };
+		OBJ_444 /* ParagraphRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* ParagraphRule.swift */; };
+		OBJ_445 /* RegExRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* RegExRule.swift */; };
+		OBJ_446 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* Rule.swift */; };
+		OBJ_447 /* BoldRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* BoldRule.swift */; };
+		OBJ_448 /* ImageRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* ImageRule.swift */; };
+		OBJ_449 /* InlineCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* InlineCodeRule.swift */; };
+		OBJ_450 /* InlineRegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* InlineRegexRule.swift */; };
+		OBJ_451 /* InlineRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* InlineRule.swift */; };
+		OBJ_452 /* InlineTextRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* InlineTextRule.swift */; };
+		OBJ_453 /* ItalicRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* ItalicRule.swift */; };
+		OBJ_454 /* LinkRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_145 /* LinkRule.swift */; };
+		OBJ_455 /* StrikeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* StrikeRule.swift */; };
+		OBJ_456 /* BoldStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* BoldStyling.swift */; };
+		OBJ_457 /* CodeBlockStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* CodeBlockStyling.swift */; };
+		OBJ_458 /* DefaultStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* DefaultStyling.swift */; };
+		OBJ_459 /* HeadingStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_151 /* HeadingStyling.swift */; };
+		OBJ_460 /* HorizontalLineStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_152 /* HorizontalLineStyling.swift */; };
+		OBJ_461 /* ImageStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_153 /* ImageStyling.swift */; };
+		OBJ_462 /* InlineCodeStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_154 /* InlineCodeStyling.swift */; };
+		OBJ_463 /* ItalicStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_155 /* ItalicStyling.swift */; };
+		OBJ_464 /* LinkStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_156 /* LinkStyling.swift */; };
+		OBJ_465 /* ListStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_157 /* ListStyling.swift */; };
+		OBJ_466 /* ParagraphStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_158 /* ParagraphStyling.swift */; };
+		OBJ_467 /* BackgroundStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_160 /* BackgroundStylingRule.swift */; };
+		OBJ_468 /* BaseFontStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_161 /* BaseFontStylingRule.swift */; };
+		OBJ_469 /* BoldStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_162 /* BoldStylingRule.swift */; };
+		OBJ_470 /* BulletStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_163 /* BulletStylingRule.swift */; };
+		OBJ_471 /* CapitalizationStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_164 /* CapitalizationStylingRule.swift */; };
+		OBJ_472 /* ContentInsetStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_165 /* ContentInsetStylingRule.swift */; };
+		OBJ_473 /* ItalicStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* ItalicStylingRule.swift */; };
+		OBJ_474 /* ItemStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_167 /* ItemStyling.swift */; };
+		OBJ_475 /* LetterSpacingStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_168 /* LetterSpacingStylingRule.swift */; };
+		OBJ_476 /* LineHeightStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_169 /* LineHeightStylingRule.swift */; };
+		OBJ_477 /* LineWidthStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_170 /* LineWidthStylingRule.swift */; };
+		OBJ_478 /* ListItemStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_171 /* ListItemStylingRule.swift */; };
+		OBJ_479 /* MinimumHeightStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_172 /* MinimumHeightStylingRule.swift */; };
+		OBJ_480 /* StrikeThroughStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_173 /* StrikeThroughStylingRule.swift */; };
+		OBJ_481 /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_174 /* Styling.swift */; };
+		OBJ_482 /* TextAlignmentStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_175 /* TextAlignmentStylingRule.swift */; };
+		OBJ_483 /* TextColorStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_176 /* TextColorStylingRule.swift */; };
+		OBJ_484 /* TextSizeStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_177 /* TextSizeStylingRule.swift */; };
+		OBJ_485 /* UnderlineStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_178 /* UnderlineStylingRule.swift */; };
+		OBJ_486 /* QuoteStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_179 /* QuoteStyling.swift */; };
+		OBJ_487 /* StrikeThroughStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_180 /* StrikeThroughStyling.swift */; };
+		OBJ_488 /* StringAttributesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_181 /* StringAttributesBuilder.swift */; };
+		OBJ_490 /* KingfisherSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kingfisher::KingfisherSwiftUI::Product" /* KingfisherSwiftUI.framework */; };
+		OBJ_491 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kingfisher::Kingfisher::Product" /* Kingfisher.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5101B11A253630AE006E4565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kingfisher::KingfisherSwiftUI";
+			remoteInfo = KingfisherSwiftUI;
+		};
+		5101B11B253630AE006E4565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kingfisher::Kingfisher";
+			remoteInfo = Kingfisher;
+		};
+		5101B11C253630AE006E4565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kingfisher::Kingfisher";
+			remoteInfo = Kingfisher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Kingfisher::Kingfisher::Product" /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kingfisher::KingfisherSwiftUI::Product" /* KingfisherSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KingfisherSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Marky-Mark::markymark::Product" /* markymark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = markymark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_100 /* MarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_101 /* OrderedMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_102 /* ParagraphMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_103 /* QuoteMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_104 /* StrikeMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_105 /* UnorderedListMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnorderedListMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_106 /* MarkDownLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownLines.swift; sourceTree = "<group>"; };
+		OBJ_107 /* MarkyMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkyMark.swift; sourceTree = "<group>"; };
+		OBJ_109 /* HasIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasIndex.swift; sourceTree = "<group>"; };
+		OBJ_110 /* HasLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasLevel.swift; sourceTree = "<group>"; };
+		OBJ_111 /* HasListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasListItems.swift; sourceTree = "<group>"; };
+		OBJ_112 /* URLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpener.swift; sourceTree = "<group>"; };
+		OBJ_115 /* MarkDownConverterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownConverterConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_116 /* MarkDownToAttributedStringConverterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownToAttributedStringConverterConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_117 /* MarkDownToInlineAttributedStringConverterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownToInlineAttributedStringConverterConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_118 /* MarkdownToViewConverterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownToViewConverterConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_119 /* MarkDownConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownConverter.swift; sourceTree = "<group>"; };
+		OBJ_12 /* AttributedLabelFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabelFlavor.swift; sourceTree = "<group>"; };
+		OBJ_120 /* RuleRangePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleRangePair.swift; sourceTree = "<group>"; };
+		OBJ_123 /* BlockQuoteRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteRule.swift; sourceTree = "<group>"; };
+		OBJ_124 /* CodeBlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockRule.swift; sourceTree = "<group>"; };
+		OBJ_125 /* HeaderRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderRule.swift; sourceTree = "<group>"; };
+		OBJ_126 /* HorizontalLineRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineRule.swift; sourceTree = "<group>"; };
+		OBJ_127 /* ImageBlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlockRule.swift; sourceTree = "<group>"; };
+		OBJ_129 /* AlphabeticListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticListType.swift; sourceTree = "<group>"; };
+		OBJ_13 /* AttributedLabelStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabelStyling.swift; sourceTree = "<group>"; };
+		OBJ_130 /* OrderedListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedListType.swift; sourceTree = "<group>"; };
+		OBJ_131 /* UnOrderedListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnOrderedListType.swift; sourceTree = "<group>"; };
+		OBJ_132 /* ListRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRule.swift; sourceTree = "<group>"; };
+		OBJ_133 /* ListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListType.swift; sourceTree = "<group>"; };
+		OBJ_134 /* ParagraphRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphRule.swift; sourceTree = "<group>"; };
+		OBJ_135 /* RegExRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegExRule.swift; sourceTree = "<group>"; };
+		OBJ_136 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		OBJ_138 /* BoldRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldRule.swift; sourceTree = "<group>"; };
+		OBJ_139 /* ImageRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRule.swift; sourceTree = "<group>"; };
+		OBJ_14 /* MarkdownAttributedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownAttributedLabel.swift; sourceTree = "<group>"; };
+		OBJ_140 /* InlineCodeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCodeRule.swift; sourceTree = "<group>"; };
+		OBJ_141 /* InlineRegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineRegexRule.swift; sourceTree = "<group>"; };
+		OBJ_142 /* InlineRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineRule.swift; sourceTree = "<group>"; };
+		OBJ_143 /* InlineTextRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextRule.swift; sourceTree = "<group>"; };
+		OBJ_144 /* ItalicRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicRule.swift; sourceTree = "<group>"; };
+		OBJ_145 /* LinkRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRule.swift; sourceTree = "<group>"; };
+		OBJ_146 /* StrikeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeRule.swift; sourceTree = "<group>"; };
+		OBJ_148 /* BoldStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldStyling.swift; sourceTree = "<group>"; };
+		OBJ_149 /* CodeBlockStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockStyling.swift; sourceTree = "<group>"; };
+		OBJ_15 /* CanConfigureViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanConfigureViews.swift; sourceTree = "<group>"; };
+		OBJ_150 /* DefaultStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyling.swift; sourceTree = "<group>"; };
+		OBJ_151 /* HeadingStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingStyling.swift; sourceTree = "<group>"; };
+		OBJ_152 /* HorizontalLineStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineStyling.swift; sourceTree = "<group>"; };
+		OBJ_153 /* ImageStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyling.swift; sourceTree = "<group>"; };
+		OBJ_154 /* InlineCodeStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCodeStyling.swift; sourceTree = "<group>"; };
+		OBJ_155 /* ItalicStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicStyling.swift; sourceTree = "<group>"; };
+		OBJ_156 /* LinkStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkStyling.swift; sourceTree = "<group>"; };
+		OBJ_157 /* ListStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyling.swift; sourceTree = "<group>"; };
+		OBJ_158 /* ParagraphStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphStyling.swift; sourceTree = "<group>"; };
+		OBJ_16 /* MarkDownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownTextView.swift; sourceTree = "<group>"; };
+		OBJ_160 /* BackgroundStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_161 /* BaseFontStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFontStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_162 /* BoldStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_163 /* BulletStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_164 /* CapitalizationStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalizationStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_165 /* ContentInsetStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInsetStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_166 /* ItalicStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_167 /* ItemStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStyling.swift; sourceTree = "<group>"; };
+		OBJ_168 /* LetterSpacingStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSpacingStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_169 /* LineHeightStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineHeightStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_170 /* LineWidthStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWidthStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_171 /* ListItemStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_172 /* MinimumHeightStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumHeightStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_173 /* StrikeThroughStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeThroughStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_174 /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		OBJ_175 /* TextAlignmentStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_176 /* TextColorStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColorStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_177 /* TextSizeStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_178 /* UnderlineStylingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineStylingRule.swift; sourceTree = "<group>"; };
+		OBJ_179 /* QuoteStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStyling.swift; sourceTree = "<group>"; };
+		OBJ_18 /* DefaultURLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultURLOpener.swift; sourceTree = "<group>"; };
+		OBJ_180 /* StrikeThroughStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeThroughStyling.swift; sourceTree = "<group>"; };
+		OBJ_181 /* StringAttributesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttributesBuilder.swift; sourceTree = "<group>"; };
+		OBJ_188 /* CacheSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSerializer.swift; sourceTree = "<group>"; };
+		OBJ_189 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		OBJ_19 /* ExtensionContextURLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionContextURLOpener.swift; sourceTree = "<group>"; };
+		OBJ_190 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		OBJ_191 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		OBJ_192 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		OBJ_193 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		OBJ_195 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		OBJ_196 /* NSButton+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		OBJ_197 /* NSTextAttachment+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment+Kingfisher.swift"; sourceTree = "<group>"; };
+		OBJ_198 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		OBJ_199 /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		OBJ_201 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		OBJ_203 /* AVAssetImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetImageDataProvider.swift; sourceTree = "<group>"; };
+		OBJ_204 /* ImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
+		OBJ_205 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		OBJ_206 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		OBJ_207 /* Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		OBJ_208 /* KingfisherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherError.swift; sourceTree = "<group>"; };
+		OBJ_209 /* KingfisherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		OBJ_21 /* AttributedStringComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringComposer.swift; sourceTree = "<group>"; };
+		OBJ_210 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		OBJ_212 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		OBJ_213 /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFAnimatedImage.swift; sourceTree = "<group>"; };
+		OBJ_214 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		OBJ_215 /* ImageDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrawing.swift; sourceTree = "<group>"; };
+		OBJ_216 /* ImageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFormat.swift; sourceTree = "<group>"; };
+		OBJ_217 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		OBJ_218 /* ImageProgressive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProgressive.swift; sourceTree = "<group>"; };
+		OBJ_219 /* ImageTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		OBJ_22 /* ElementComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementComposer.swift; sourceTree = "<group>"; };
+		OBJ_220 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		OBJ_222 /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		OBJ_223 /* ImageDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProcessor.swift; sourceTree = "<group>"; };
+		OBJ_224 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		OBJ_225 /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
+		OBJ_226 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		OBJ_227 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		OBJ_228 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
+		OBJ_229 /* RequestModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModifier.swift; sourceTree = "<group>"; };
+		OBJ_23 /* InlineAttributedStringComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAttributedStringComposer.swift; sourceTree = "<group>"; };
+		OBJ_230 /* RetryStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryStrategy.swift; sourceTree = "<group>"; };
+		OBJ_231 /* SessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDataTask.swift; sourceTree = "<group>"; };
+		OBJ_232 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_234 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		OBJ_235 /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
+		OBJ_236 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		OBJ_237 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		OBJ_238 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_239 /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
+		OBJ_24 /* StringComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringComposer.swift; sourceTree = "<group>"; };
+		OBJ_240 /* SizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeExtensions.swift; sourceTree = "<group>"; };
+		OBJ_241 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		OBJ_243 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		OBJ_244 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		OBJ_246 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		OBJ_247 /* ImageBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBinder.swift; sourceTree = "<group>"; };
+		OBJ_248 /* KFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImage.swift; sourceTree = "<group>"; };
+		OBJ_249 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/scompton/dev/git/Marky-Mark/.build/checkouts/Kingfisher/Package.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* ViewAppenderComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAppenderComposer.swift; sourceTree = "<group>"; };
+		OBJ_255 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_256 /* Readme_Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Readme_Assets; sourceTree = SOURCE_ROOT; };
+		OBJ_257 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_258 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_259 /* markymark.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = markymark.podspec; sourceTree = "<group>"; };
+		OBJ_27 /* NSAttributedString+FullRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+FullRange.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* NSRange+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRange+extensions.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* NSRegularExpression+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+extensions.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* URL+addHTTPSIfSchemeIsMissing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+addHTTPSIfSchemeIsMissing.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* ContentfulFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulFlavor.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
+		OBJ_35 /* InlineMarkDownItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMarkDownItemFactory.swift; sourceTree = "<group>"; };
+		OBJ_40 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticListAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_41 /* HeaderAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ListAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_43 /* OrderedListAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedListAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_44 /* ParagraphAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_45 /* QuoteAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_46 /* ContainerAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_48 /* BoldAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_49 /* CodeAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_50 /* ImageAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_51 /* InlineAttributedStringLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAttributedStringLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_52 /* InlineCodeAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCodeAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_53 /* InlineImageAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineImageAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_54 /* InlineTextAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_55 /* ItalicAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_56 /* StrikeThroughAttributedStringBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikeThroughAttributedStringBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_57 /* TextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAttachment.swift; sourceTree = "<group>"; };
+		OBJ_58 /* LayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_59 /* LayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_63 /* AlphabeticListLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticListLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_64 /* CodeViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_65 /* HeaderViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_66 /* HorizontalLineLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_67 /* ImageViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_68 /* ListViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_69 /* OrderedListLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedListLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_70 /* ParagraphViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_71 /* QuoteBlockLayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBlockLayoutBuilder.swift; sourceTree = "<group>"; };
+		OBJ_73 /* InlineAttributedStringViewLayoutBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAttributedStringViewLayoutBlockBuilder.swift; sourceTree = "<group>"; };
+		OBJ_74 /* LinkLayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLayoutBuilder.swift; sourceTree = "<group>"; };
+		OBJ_76 /* AttributedInteractiveLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedInteractiveLabel.swift; sourceTree = "<group>"; };
+		OBJ_77 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		OBJ_78 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		OBJ_79 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		OBJ_80 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		OBJ_81 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		OBJ_83 /* AutolayoutViewAppender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutViewAppender.swift; sourceTree = "<group>"; };
+		OBJ_84 /* ListMarkDownItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMarkDownItemFactory.swift; sourceTree = "<group>"; };
+		OBJ_86 /* AlphabeticallyOrderedMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticallyOrderedMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_87 /* BoldItalicMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldItalicMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_88 /* BoldMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_89 /* CodeBlockMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_90 /* HeaderMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_91 /* HorizontalLineMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_92 /* ImageBlockMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlockMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_93 /* ImageMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_94 /* InlineCodeMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCodeMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_95 /* InlineMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_96 /* InlineTextMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTextMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_97 /* ItalicMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_98 /* LinkMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMarkDownItem.swift; sourceTree = "<group>"; };
+		OBJ_99 /* ListMarkDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMarkDownItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_331 /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_490 /* KingfisherSwiftUI.framework in Frameworks */,
+				OBJ_491 /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Default implementations */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* Attributed label */,
+				OBJ_15 /* CanConfigureViews.swift */,
+				OBJ_16 /* MarkDownTextView.swift */,
+				OBJ_17 /* URL Openers */,
+			);
+			path = "Default implementations";
+			sourceTree = "<group>";
+		};
+		OBJ_108 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_109 /* HasIndex.swift */,
+				OBJ_110 /* HasLevel.swift */,
+				OBJ_111 /* HasListItems.swift */,
+				OBJ_112 /* URLOpener.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		OBJ_11 /* Attributed label */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* AttributedLabelFlavor.swift */,
+				OBJ_13 /* AttributedLabelStyling.swift */,
+				OBJ_14 /* MarkdownAttributedLabel.swift */,
+			);
+			path = "Attributed label";
+			sourceTree = "<group>";
+		};
+		OBJ_113 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_114 /* Configurations */,
+				OBJ_119 /* MarkDownConverter.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		OBJ_114 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_115 /* MarkDownConverterConfiguration.swift */,
+				OBJ_116 /* MarkDownToAttributedStringConverterConfiguration.swift */,
+				OBJ_117 /* MarkDownToInlineAttributedStringConverterConfiguration.swift */,
+				OBJ_118 /* MarkdownToViewConverterConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		OBJ_121 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_122 /* Block */,
+				OBJ_137 /* Inline */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		OBJ_122 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_123 /* BlockQuoteRule.swift */,
+				OBJ_124 /* CodeBlockRule.swift */,
+				OBJ_125 /* HeaderRule.swift */,
+				OBJ_126 /* HorizontalLineRule.swift */,
+				OBJ_127 /* ImageBlockRule.swift */,
+				OBJ_128 /* List Types */,
+				OBJ_132 /* ListRule.swift */,
+				OBJ_133 /* ListType.swift */,
+				OBJ_134 /* ParagraphRule.swift */,
+				OBJ_135 /* RegExRule.swift */,
+				OBJ_136 /* Rule.swift */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		OBJ_128 /* List Types */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_129 /* AlphabeticListType.swift */,
+				OBJ_130 /* OrderedListType.swift */,
+				OBJ_131 /* UnOrderedListType.swift */,
+			);
+			path = "List Types";
+			sourceTree = "<group>";
+		};
+		OBJ_137 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_138 /* BoldRule.swift */,
+				OBJ_139 /* ImageRule.swift */,
+				OBJ_140 /* InlineCodeRule.swift */,
+				OBJ_141 /* InlineRegexRule.swift */,
+				OBJ_142 /* InlineRule.swift */,
+				OBJ_143 /* InlineTextRule.swift */,
+				OBJ_144 /* ItalicRule.swift */,
+				OBJ_145 /* LinkRule.swift */,
+				OBJ_146 /* StrikeRule.swift */,
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		OBJ_147 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_148 /* BoldStyling.swift */,
+				OBJ_149 /* CodeBlockStyling.swift */,
+				OBJ_150 /* DefaultStyling.swift */,
+				OBJ_151 /* HeadingStyling.swift */,
+				OBJ_152 /* HorizontalLineStyling.swift */,
+				OBJ_153 /* ImageStyling.swift */,
+				OBJ_154 /* InlineCodeStyling.swift */,
+				OBJ_155 /* ItalicStyling.swift */,
+				OBJ_156 /* LinkStyling.swift */,
+				OBJ_157 /* ListStyling.swift */,
+				OBJ_158 /* ParagraphStyling.swift */,
+				OBJ_159 /* Protocols */,
+				OBJ_179 /* QuoteStyling.swift */,
+				OBJ_180 /* StrikeThroughStyling.swift */,
+				OBJ_181 /* StringAttributesBuilder.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		OBJ_159 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_160 /* BackgroundStylingRule.swift */,
+				OBJ_161 /* BaseFontStylingRule.swift */,
+				OBJ_162 /* BoldStylingRule.swift */,
+				OBJ_163 /* BulletStylingRule.swift */,
+				OBJ_164 /* CapitalizationStylingRule.swift */,
+				OBJ_165 /* ContentInsetStylingRule.swift */,
+				OBJ_166 /* ItalicStylingRule.swift */,
+				OBJ_167 /* ItemStyling.swift */,
+				OBJ_168 /* LetterSpacingStylingRule.swift */,
+				OBJ_169 /* LineHeightStylingRule.swift */,
+				OBJ_170 /* LineWidthStylingRule.swift */,
+				OBJ_171 /* ListItemStylingRule.swift */,
+				OBJ_172 /* MinimumHeightStylingRule.swift */,
+				OBJ_173 /* StrikeThroughStylingRule.swift */,
+				OBJ_174 /* Styling.swift */,
+				OBJ_175 /* TextAlignmentStylingRule.swift */,
+				OBJ_176 /* TextColorStylingRule.swift */,
+				OBJ_177 /* TextSizeStylingRule.swift */,
+				OBJ_178 /* UnderlineStylingRule.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* URL Openers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* DefaultURLOpener.swift */,
+				OBJ_19 /* ExtensionContextURLOpener.swift */,
+			);
+			path = "URL Openers";
+			sourceTree = "<group>";
+		};
+		OBJ_182 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_183 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_184 /* Kingfisher 5.15.6 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_184 /* Kingfisher 5.15.6 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_185 /* Kingfisher */,
+				OBJ_186 /* KingfisherSwiftUI */,
+				OBJ_249 /* Package.swift */,
+			);
+			name = "Kingfisher 5.15.6";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_185 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Kingfisher;
+			path = .build/checkouts/Kingfisher/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_186 /* KingfisherSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_187 /* Cache */,
+				OBJ_194 /* Extensions */,
+				OBJ_200 /* General */,
+				OBJ_211 /* Image */,
+				OBJ_221 /* Networking */,
+				OBJ_233 /* Utility */,
+				OBJ_242 /* Views */,
+				OBJ_245 /* SwiftUI */,
+			);
+			name = KingfisherSwiftUI;
+			path = .build/checkouts/Kingfisher/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_187 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_188 /* CacheSerializer.swift */,
+				OBJ_189 /* DiskStorage.swift */,
+				OBJ_190 /* FormatIndicatedCacheSerializer.swift */,
+				OBJ_191 /* ImageCache.swift */,
+				OBJ_192 /* MemoryStorage.swift */,
+				OBJ_193 /* Storage.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		OBJ_194 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_195 /* ImageView+Kingfisher.swift */,
+				OBJ_196 /* NSButton+Kingfisher.swift */,
+				OBJ_197 /* NSTextAttachment+Kingfisher.swift */,
+				OBJ_198 /* UIButton+Kingfisher.swift */,
+				OBJ_199 /* WKInterfaceImage+Kingfisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* ElementComposers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* AttributedStringComposer.swift */,
+				OBJ_22 /* ElementComposer.swift */,
+				OBJ_23 /* InlineAttributedStringComposer.swift */,
+				OBJ_24 /* StringComposer.swift */,
+				OBJ_25 /* ViewAppenderComposer.swift */,
+			);
+			path = ElementComposers;
+			sourceTree = "<group>";
+		};
+		OBJ_200 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_201 /* Deprecated.swift */,
+				OBJ_202 /* ImageSource */,
+				OBJ_207 /* Kingfisher.swift */,
+				OBJ_208 /* KingfisherError.swift */,
+				OBJ_209 /* KingfisherManager.swift */,
+				OBJ_210 /* KingfisherOptionsInfo.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		OBJ_202 /* ImageSource */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_203 /* AVAssetImageDataProvider.swift */,
+				OBJ_204 /* ImageDataProvider.swift */,
+				OBJ_205 /* Resource.swift */,
+				OBJ_206 /* Source.swift */,
+			);
+			path = ImageSource;
+			sourceTree = "<group>";
+		};
+		OBJ_211 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_212 /* Filter.swift */,
+				OBJ_213 /* GIFAnimatedImage.swift */,
+				OBJ_214 /* Image.swift */,
+				OBJ_215 /* ImageDrawing.swift */,
+				OBJ_216 /* ImageFormat.swift */,
+				OBJ_217 /* ImageProcessor.swift */,
+				OBJ_218 /* ImageProgressive.swift */,
+				OBJ_219 /* ImageTransition.swift */,
+				OBJ_220 /* Placeholder.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		OBJ_221 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_222 /* AuthenticationChallengeResponsable.swift */,
+				OBJ_223 /* ImageDataProcessor.swift */,
+				OBJ_224 /* ImageDownloader.swift */,
+				OBJ_225 /* ImageDownloaderDelegate.swift */,
+				OBJ_226 /* ImageModifier.swift */,
+				OBJ_227 /* ImagePrefetcher.swift */,
+				OBJ_228 /* RedirectHandler.swift */,
+				OBJ_229 /* RequestModifier.swift */,
+				OBJ_230 /* RetryStrategy.swift */,
+				OBJ_231 /* SessionDataTask.swift */,
+				OBJ_232 /* SessionDelegate.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		OBJ_233 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_234 /* Box.swift */,
+				OBJ_235 /* CallbackQueue.swift */,
+				OBJ_236 /* Delegate.swift */,
+				OBJ_237 /* ExtensionHelpers.swift */,
+				OBJ_238 /* Result.swift */,
+				OBJ_239 /* Runtime.swift */,
+				OBJ_240 /* SizeExtensions.swift */,
+				OBJ_241 /* String+MD5.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		OBJ_242 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_243 /* AnimatedImageView.swift */,
+				OBJ_244 /* Indicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		OBJ_245 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_246 /* Delegate.swift */,
+				OBJ_247 /* ImageBinder.swift */,
+				OBJ_248 /* KFImage.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		OBJ_250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Kingfisher::Kingfisher::Product" /* Kingfisher.framework */,
+				"Marky-Mark::markymark::Product" /* markymark.framework */,
+				"Kingfisher::KingfisherSwiftUI::Product" /* KingfisherSwiftUI.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* NSAttributedString+FullRange.swift */,
+				OBJ_28 /* NSRange+extensions.swift */,
+				OBJ_29 /* NSRegularExpression+extensions.swift */,
+				OBJ_30 /* String+extensions.swift */,
+				OBJ_31 /* URL+addHTTPSIfSchemeIsMissing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_32 /* Flavors */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* ContentfulFlavor.swift */,
+				OBJ_34 /* Flavor.swift */,
+			);
+			path = Flavors;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* Layout Builders */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* AttributedString */,
+				OBJ_58 /* LayoutBlockBuilder.swift */,
+				OBJ_59 /* LayoutBuilder.swift */,
+				OBJ_60 /* UIView */,
+			);
+			path = "Layout Builders";
+			sourceTree = "<group>";
+		};
+		OBJ_37 /* AttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* Block Builders */,
+			);
+			path = AttributedString;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* Block Builders */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* Block */,
+				OBJ_46 /* ContainerAttributedStringBlockBuilder.swift */,
+				OBJ_47 /* Inline */,
+			);
+			path = "Block Builders";
+			sourceTree = "<group>";
+		};
+		OBJ_39 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_41 /* HeaderAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_42 /* ListAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_43 /* OrderedListAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_44 /* ParagraphAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_45 /* QuoteAttributedStringLayoutBlockBuilder.swift */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* BoldAttributedStringBlockBuilder.swift */,
+				OBJ_49 /* CodeAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_50 /* ImageAttributedStringBlockBuilder.swift */,
+				OBJ_51 /* InlineAttributedStringLayoutBlockBuilder.swift */,
+				OBJ_52 /* InlineCodeAttributedStringBlockBuilder.swift */,
+				OBJ_53 /* InlineImageAttributedStringBlockBuilder.swift */,
+				OBJ_54 /* InlineTextAttributedStringBlockBuilder.swift */,
+				OBJ_55 /* ItalicAttributedStringBlockBuilder.swift */,
+				OBJ_56 /* StrikeThroughAttributedStringBlockBuilder.swift */,
+				OBJ_57 /* TextAttachment.swift */,
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_182 /* Tests */,
+				OBJ_183 /* Dependencies */,
+				OBJ_250 /* Products */,
+				OBJ_255 /* Example */,
+				OBJ_256 /* Readme_Assets */,
+				OBJ_257 /* LICENSE */,
+				OBJ_258 /* README.md */,
+				OBJ_259 /* markymark.podspec */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_60 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_61 /* Block Builders */,
+				OBJ_75 /* Views */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		OBJ_61 /* Block Builders */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* Block */,
+				OBJ_72 /* Inline */,
+			);
+			path = "Block Builders";
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* AlphabeticListLayoutBlockBuilder.swift */,
+				OBJ_64 /* CodeViewLayoutBlockBuilder.swift */,
+				OBJ_65 /* HeaderViewLayoutBlockBuilder.swift */,
+				OBJ_66 /* HorizontalLineLayoutBlockBuilder.swift */,
+				OBJ_67 /* ImageViewLayoutBlockBuilder.swift */,
+				OBJ_68 /* ListViewLayoutBlockBuilder.swift */,
+				OBJ_69 /* OrderedListLayoutBlockBuilder.swift */,
+				OBJ_70 /* ParagraphViewLayoutBlockBuilder.swift */,
+				OBJ_71 /* QuoteBlockLayoutBuilder.swift */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* markymark */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_72 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_73 /* InlineAttributedStringViewLayoutBlockBuilder.swift */,
+				OBJ_74 /* LinkLayoutBuilder.swift */,
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		OBJ_75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_76 /* AttributedInteractiveLabel.swift */,
+				OBJ_77 /* ContainerView.swift */,
+				OBJ_78 /* LineView.swift */,
+				OBJ_79 /* ListItemView.swift */,
+				OBJ_80 /* ListView.swift */,
+				OBJ_81 /* RemoteImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* markymark */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Classes */,
+			);
+			path = markymark;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_82 /* Layout helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_83 /* AutolayoutViewAppender.swift */,
+			);
+			path = "Layout helpers";
+			sourceTree = "<group>";
+		};
+		OBJ_85 /* MarkDown Items */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* AlphabeticallyOrderedMarkDownItem.swift */,
+				OBJ_87 /* BoldItalicMarkDownItem.swift */,
+				OBJ_88 /* BoldMarkDownItem.swift */,
+				OBJ_89 /* CodeBlockMarkDownItem.swift */,
+				OBJ_90 /* HeaderMarkDownItem.swift */,
+				OBJ_91 /* HorizontalLineMarkDownItem.swift */,
+				OBJ_92 /* ImageBlockMarkDownItem.swift */,
+				OBJ_93 /* ImageMarkDownItem.swift */,
+				OBJ_94 /* InlineCodeMarkDownItem.swift */,
+				OBJ_95 /* InlineMarkDownItem.swift */,
+				OBJ_96 /* InlineTextMarkDownItem.swift */,
+				OBJ_97 /* ItalicMarkDownItem.swift */,
+				OBJ_98 /* LinkMarkDownItem.swift */,
+				OBJ_99 /* ListMarkDownItem.swift */,
+				OBJ_100 /* MarkDownItem.swift */,
+				OBJ_101 /* OrderedMarkDownItem.swift */,
+				OBJ_102 /* ParagraphMarkDownItem.swift */,
+				OBJ_103 /* QuoteMarkDownItem.swift */,
+				OBJ_104 /* StrikeMarkDownItem.swift */,
+				OBJ_105 /* UnorderedListMarkDownItem.swift */,
+			);
+			path = "MarkDown Items";
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Default implementations */,
+				OBJ_20 /* ElementComposers */,
+				OBJ_26 /* Extensions */,
+				OBJ_32 /* Flavors */,
+				OBJ_35 /* InlineMarkDownItemFactory.swift */,
+				OBJ_36 /* Layout Builders */,
+				OBJ_82 /* Layout helpers */,
+				OBJ_84 /* ListMarkDownItemFactory.swift */,
+				OBJ_85 /* MarkDown Items */,
+				OBJ_106 /* MarkDownLines.swift */,
+				OBJ_107 /* MarkyMark.swift */,
+				OBJ_108 /* Protocols */,
+				OBJ_113 /* Renderer */,
+				OBJ_120 /* RuleRangePair.swift */,
+				OBJ_121 /* Rules */,
+				OBJ_147 /* Styling */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Kingfisher::Kingfisher" /* Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_261 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
+			buildPhases = (
+				OBJ_264 /* Sources */,
+				OBJ_315 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kingfisher;
+			productName = Kingfisher;
+			productReference = "Kingfisher::Kingfisher::Product" /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kingfisher::KingfisherSwiftUI" /* KingfisherSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_323 /* Build configuration list for PBXNativeTarget "KingfisherSwiftUI" */;
+			buildPhases = (
+				OBJ_326 /* Sources */,
+				OBJ_330 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_332 /* PBXTargetDependency */,
+			);
+			name = KingfisherSwiftUI;
+			productName = KingfisherSwiftUI;
+			productReference = "Kingfisher::KingfisherSwiftUI::Product" /* KingfisherSwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kingfisher::SwiftPMPackageDescription" /* KingfisherPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_317 /* Build configuration list for PBXNativeTarget "KingfisherPackageDescription" */;
+			buildPhases = (
+				OBJ_320 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KingfisherPackageDescription;
+			productName = KingfisherPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Marky-Mark::SwiftPMPackageDescription" /* Marky-MarkPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_334 /* Build configuration list for PBXNativeTarget "Marky-MarkPackageDescription" */;
+			buildPhases = (
+				OBJ_337 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marky-MarkPackageDescription";
+			productName = "Marky-MarkPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"Marky-Mark::markymark" /* markymark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_340 /* Build configuration list for PBXNativeTarget "markymark" */;
+			buildPhases = (
+				OBJ_343 /* Sources */,
+				OBJ_489 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_492 /* PBXTargetDependency */,
+				OBJ_493 /* PBXTargetDependency */,
+			);
+			name = markymark;
+			productName = markymark;
+			productReference = "Marky-Mark::markymark::Product" /* markymark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "MarkyMark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Kingfisher::Kingfisher" /* Kingfisher */,
+				"Kingfisher::SwiftPMPackageDescription" /* KingfisherPackageDescription */,
+				"Kingfisher::KingfisherSwiftUI" /* KingfisherSwiftUI */,
+				"Marky-Mark::SwiftPMPackageDescription" /* Marky-MarkPackageDescription */,
+				"Marky-Mark::markymark" /* markymark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_265 /* CacheSerializer.swift in Sources */,
+				OBJ_266 /* DiskStorage.swift in Sources */,
+				OBJ_267 /* FormatIndicatedCacheSerializer.swift in Sources */,
+				OBJ_268 /* ImageCache.swift in Sources */,
+				OBJ_269 /* MemoryStorage.swift in Sources */,
+				OBJ_270 /* Storage.swift in Sources */,
+				OBJ_271 /* ImageView+Kingfisher.swift in Sources */,
+				OBJ_272 /* NSButton+Kingfisher.swift in Sources */,
+				OBJ_273 /* NSTextAttachment+Kingfisher.swift in Sources */,
+				OBJ_274 /* UIButton+Kingfisher.swift in Sources */,
+				OBJ_275 /* WKInterfaceImage+Kingfisher.swift in Sources */,
+				OBJ_276 /* Deprecated.swift in Sources */,
+				OBJ_277 /* AVAssetImageDataProvider.swift in Sources */,
+				OBJ_278 /* ImageDataProvider.swift in Sources */,
+				OBJ_279 /* Resource.swift in Sources */,
+				OBJ_280 /* Source.swift in Sources */,
+				OBJ_281 /* Kingfisher.swift in Sources */,
+				OBJ_282 /* KingfisherError.swift in Sources */,
+				OBJ_283 /* KingfisherManager.swift in Sources */,
+				OBJ_284 /* KingfisherOptionsInfo.swift in Sources */,
+				OBJ_285 /* Filter.swift in Sources */,
+				OBJ_286 /* GIFAnimatedImage.swift in Sources */,
+				OBJ_287 /* Image.swift in Sources */,
+				OBJ_288 /* ImageDrawing.swift in Sources */,
+				OBJ_289 /* ImageFormat.swift in Sources */,
+				OBJ_290 /* ImageProcessor.swift in Sources */,
+				OBJ_291 /* ImageProgressive.swift in Sources */,
+				OBJ_292 /* ImageTransition.swift in Sources */,
+				OBJ_293 /* Placeholder.swift in Sources */,
+				OBJ_294 /* AuthenticationChallengeResponsable.swift in Sources */,
+				OBJ_295 /* ImageDataProcessor.swift in Sources */,
+				OBJ_296 /* ImageDownloader.swift in Sources */,
+				OBJ_297 /* ImageDownloaderDelegate.swift in Sources */,
+				OBJ_298 /* ImageModifier.swift in Sources */,
+				OBJ_299 /* ImagePrefetcher.swift in Sources */,
+				OBJ_300 /* RedirectHandler.swift in Sources */,
+				OBJ_301 /* RequestModifier.swift in Sources */,
+				OBJ_302 /* RetryStrategy.swift in Sources */,
+				OBJ_303 /* SessionDataTask.swift in Sources */,
+				OBJ_304 /* SessionDelegate.swift in Sources */,
+				OBJ_305 /* Box.swift in Sources */,
+				OBJ_306 /* CallbackQueue.swift in Sources */,
+				OBJ_307 /* Delegate.swift in Sources */,
+				OBJ_308 /* ExtensionHelpers.swift in Sources */,
+				OBJ_309 /* Result.swift in Sources */,
+				OBJ_310 /* Runtime.swift in Sources */,
+				OBJ_311 /* SizeExtensions.swift in Sources */,
+				OBJ_312 /* String+MD5.swift in Sources */,
+				OBJ_313 /* AnimatedImageView.swift in Sources */,
+				OBJ_314 /* Indicator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_321 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_327 /* Delegate.swift in Sources */,
+				OBJ_328 /* ImageBinder.swift in Sources */,
+				OBJ_329 /* KFImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_338 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_344 /* AttributedLabelFlavor.swift in Sources */,
+				OBJ_345 /* AttributedLabelStyling.swift in Sources */,
+				OBJ_346 /* MarkdownAttributedLabel.swift in Sources */,
+				OBJ_347 /* CanConfigureViews.swift in Sources */,
+				OBJ_348 /* MarkDownTextView.swift in Sources */,
+				OBJ_349 /* DefaultURLOpener.swift in Sources */,
+				OBJ_350 /* ExtensionContextURLOpener.swift in Sources */,
+				OBJ_351 /* AttributedStringComposer.swift in Sources */,
+				OBJ_352 /* ElementComposer.swift in Sources */,
+				OBJ_353 /* InlineAttributedStringComposer.swift in Sources */,
+				OBJ_354 /* StringComposer.swift in Sources */,
+				OBJ_355 /* ViewAppenderComposer.swift in Sources */,
+				OBJ_356 /* NSAttributedString+FullRange.swift in Sources */,
+				OBJ_357 /* NSRange+extensions.swift in Sources */,
+				OBJ_358 /* NSRegularExpression+extensions.swift in Sources */,
+				OBJ_359 /* String+extensions.swift in Sources */,
+				OBJ_360 /* URL+addHTTPSIfSchemeIsMissing.swift in Sources */,
+				OBJ_361 /* ContentfulFlavor.swift in Sources */,
+				OBJ_362 /* Flavor.swift in Sources */,
+				OBJ_363 /* InlineMarkDownItemFactory.swift in Sources */,
+				OBJ_364 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_365 /* HeaderAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_366 /* ListAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_367 /* OrderedListAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_368 /* ParagraphAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_369 /* QuoteAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_370 /* ContainerAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_371 /* BoldAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_372 /* CodeAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_373 /* ImageAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_374 /* InlineAttributedStringLayoutBlockBuilder.swift in Sources */,
+				OBJ_375 /* InlineCodeAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_376 /* InlineImageAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_377 /* InlineTextAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_378 /* ItalicAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_379 /* StrikeThroughAttributedStringBlockBuilder.swift in Sources */,
+				OBJ_380 /* TextAttachment.swift in Sources */,
+				OBJ_381 /* LayoutBlockBuilder.swift in Sources */,
+				OBJ_382 /* LayoutBuilder.swift in Sources */,
+				OBJ_383 /* AlphabeticListLayoutBlockBuilder.swift in Sources */,
+				OBJ_384 /* CodeViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_385 /* HeaderViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_386 /* HorizontalLineLayoutBlockBuilder.swift in Sources */,
+				OBJ_387 /* ImageViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_388 /* ListViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_389 /* OrderedListLayoutBlockBuilder.swift in Sources */,
+				OBJ_390 /* ParagraphViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_391 /* QuoteBlockLayoutBuilder.swift in Sources */,
+				OBJ_392 /* InlineAttributedStringViewLayoutBlockBuilder.swift in Sources */,
+				OBJ_393 /* LinkLayoutBuilder.swift in Sources */,
+				OBJ_394 /* AttributedInteractiveLabel.swift in Sources */,
+				OBJ_395 /* ContainerView.swift in Sources */,
+				OBJ_396 /* LineView.swift in Sources */,
+				OBJ_397 /* ListItemView.swift in Sources */,
+				OBJ_398 /* ListView.swift in Sources */,
+				OBJ_399 /* RemoteImageView.swift in Sources */,
+				OBJ_400 /* AutolayoutViewAppender.swift in Sources */,
+				OBJ_401 /* ListMarkDownItemFactory.swift in Sources */,
+				OBJ_402 /* AlphabeticallyOrderedMarkDownItem.swift in Sources */,
+				OBJ_403 /* BoldItalicMarkDownItem.swift in Sources */,
+				OBJ_404 /* BoldMarkDownItem.swift in Sources */,
+				OBJ_405 /* CodeBlockMarkDownItem.swift in Sources */,
+				OBJ_406 /* HeaderMarkDownItem.swift in Sources */,
+				OBJ_407 /* HorizontalLineMarkDownItem.swift in Sources */,
+				OBJ_408 /* ImageBlockMarkDownItem.swift in Sources */,
+				OBJ_409 /* ImageMarkDownItem.swift in Sources */,
+				OBJ_410 /* InlineCodeMarkDownItem.swift in Sources */,
+				OBJ_411 /* InlineMarkDownItem.swift in Sources */,
+				OBJ_412 /* InlineTextMarkDownItem.swift in Sources */,
+				OBJ_413 /* ItalicMarkDownItem.swift in Sources */,
+				OBJ_414 /* LinkMarkDownItem.swift in Sources */,
+				OBJ_415 /* ListMarkDownItem.swift in Sources */,
+				OBJ_416 /* MarkDownItem.swift in Sources */,
+				OBJ_417 /* OrderedMarkDownItem.swift in Sources */,
+				OBJ_418 /* ParagraphMarkDownItem.swift in Sources */,
+				OBJ_419 /* QuoteMarkDownItem.swift in Sources */,
+				OBJ_420 /* StrikeMarkDownItem.swift in Sources */,
+				OBJ_421 /* UnorderedListMarkDownItem.swift in Sources */,
+				OBJ_422 /* MarkDownLines.swift in Sources */,
+				OBJ_423 /* MarkyMark.swift in Sources */,
+				OBJ_424 /* HasIndex.swift in Sources */,
+				OBJ_425 /* HasLevel.swift in Sources */,
+				OBJ_426 /* HasListItems.swift in Sources */,
+				OBJ_427 /* URLOpener.swift in Sources */,
+				OBJ_428 /* MarkDownConverterConfiguration.swift in Sources */,
+				OBJ_429 /* MarkDownToAttributedStringConverterConfiguration.swift in Sources */,
+				OBJ_430 /* MarkDownToInlineAttributedStringConverterConfiguration.swift in Sources */,
+				OBJ_431 /* MarkdownToViewConverterConfiguration.swift in Sources */,
+				OBJ_432 /* MarkDownConverter.swift in Sources */,
+				OBJ_433 /* RuleRangePair.swift in Sources */,
+				OBJ_434 /* BlockQuoteRule.swift in Sources */,
+				OBJ_435 /* CodeBlockRule.swift in Sources */,
+				OBJ_436 /* HeaderRule.swift in Sources */,
+				OBJ_437 /* HorizontalLineRule.swift in Sources */,
+				OBJ_438 /* ImageBlockRule.swift in Sources */,
+				OBJ_439 /* AlphabeticListType.swift in Sources */,
+				OBJ_440 /* OrderedListType.swift in Sources */,
+				OBJ_441 /* UnOrderedListType.swift in Sources */,
+				OBJ_442 /* ListRule.swift in Sources */,
+				OBJ_443 /* ListType.swift in Sources */,
+				OBJ_444 /* ParagraphRule.swift in Sources */,
+				OBJ_445 /* RegExRule.swift in Sources */,
+				OBJ_446 /* Rule.swift in Sources */,
+				OBJ_447 /* BoldRule.swift in Sources */,
+				OBJ_448 /* ImageRule.swift in Sources */,
+				OBJ_449 /* InlineCodeRule.swift in Sources */,
+				OBJ_450 /* InlineRegexRule.swift in Sources */,
+				OBJ_451 /* InlineRule.swift in Sources */,
+				OBJ_452 /* InlineTextRule.swift in Sources */,
+				OBJ_453 /* ItalicRule.swift in Sources */,
+				OBJ_454 /* LinkRule.swift in Sources */,
+				OBJ_455 /* StrikeRule.swift in Sources */,
+				OBJ_456 /* BoldStyling.swift in Sources */,
+				OBJ_457 /* CodeBlockStyling.swift in Sources */,
+				OBJ_458 /* DefaultStyling.swift in Sources */,
+				OBJ_459 /* HeadingStyling.swift in Sources */,
+				OBJ_460 /* HorizontalLineStyling.swift in Sources */,
+				OBJ_461 /* ImageStyling.swift in Sources */,
+				OBJ_462 /* InlineCodeStyling.swift in Sources */,
+				OBJ_463 /* ItalicStyling.swift in Sources */,
+				OBJ_464 /* LinkStyling.swift in Sources */,
+				OBJ_465 /* ListStyling.swift in Sources */,
+				OBJ_466 /* ParagraphStyling.swift in Sources */,
+				OBJ_467 /* BackgroundStylingRule.swift in Sources */,
+				OBJ_468 /* BaseFontStylingRule.swift in Sources */,
+				OBJ_469 /* BoldStylingRule.swift in Sources */,
+				OBJ_470 /* BulletStylingRule.swift in Sources */,
+				OBJ_471 /* CapitalizationStylingRule.swift in Sources */,
+				OBJ_472 /* ContentInsetStylingRule.swift in Sources */,
+				OBJ_473 /* ItalicStylingRule.swift in Sources */,
+				OBJ_474 /* ItemStyling.swift in Sources */,
+				OBJ_475 /* LetterSpacingStylingRule.swift in Sources */,
+				OBJ_476 /* LineHeightStylingRule.swift in Sources */,
+				OBJ_477 /* LineWidthStylingRule.swift in Sources */,
+				OBJ_478 /* ListItemStylingRule.swift in Sources */,
+				OBJ_479 /* MinimumHeightStylingRule.swift in Sources */,
+				OBJ_480 /* StrikeThroughStylingRule.swift in Sources */,
+				OBJ_481 /* Styling.swift in Sources */,
+				OBJ_482 /* TextAlignmentStylingRule.swift in Sources */,
+				OBJ_483 /* TextColorStylingRule.swift in Sources */,
+				OBJ_484 /* TextSizeStylingRule.swift in Sources */,
+				OBJ_485 /* UnderlineStylingRule.swift in Sources */,
+				OBJ_486 /* QuoteStyling.swift in Sources */,
+				OBJ_487 /* StrikeThroughStyling.swift in Sources */,
+				OBJ_488 /* StringAttributesBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kingfisher::Kingfisher" /* Kingfisher */;
+			targetProxy = 5101B11B253630AE006E4565 /* PBXContainerItemProxy */;
+		};
+		OBJ_492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kingfisher::KingfisherSwiftUI" /* KingfisherSwiftUI */;
+			targetProxy = 5101B11A253630AE006E4565 /* PBXContainerItemProxy */;
+		};
+		OBJ_493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kingfisher::Kingfisher" /* Kingfisher */;
+			targetProxy = 5101B11C253630AE006E4565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/Kingfisher_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kingfisher;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Kingfisher;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/Kingfisher_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Kingfisher;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Kingfisher;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/KingfisherSwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KingfisherSwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KingfisherSwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/KingfisherSwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KingfisherSwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KingfisherSwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/markymark_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = markymark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = markymark;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MarkyMark.xcodeproj/markymark_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = markymark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = markymark;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "MarkyMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_261 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_262 /* Debug */,
+				OBJ_263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_317 /* Build configuration list for PBXNativeTarget "KingfisherPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_318 /* Debug */,
+				OBJ_319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_323 /* Build configuration list for PBXNativeTarget "KingfisherSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_324 /* Debug */,
+				OBJ_325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_334 /* Build configuration list for PBXNativeTarget "Marky-MarkPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_335 /* Debug */,
+				OBJ_336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_340 /* Build configuration list for PBXNativeTarget "markymark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_341 /* Debug */,
+				OBJ_342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
