@@ -28,7 +28,10 @@ open class ImageMarkDownItem: MarkDownItem {
 
         // This will retrieve the image from the cache or download it (async) and store it in the cache.
         // The completion handler will be invoked on the main thread.
-        KingfisherManager.shared.retrieveImage(with: url.addHTTPSIfSchemeIsMissing()) { [weak self] result in
+        KingfisherManager.shared.retrieveImage(
+            with: url.addHTTPSIfSchemeIsMissing(),
+            options: [.processor(MarkDownImageProcessor())]
+        ) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let imageResult):
