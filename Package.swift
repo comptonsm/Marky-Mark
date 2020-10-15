@@ -5,18 +5,20 @@ import PackageDescription
 let package = Package(
     name: "Marky-Mark",
     platforms: [
-        .iOS("8.0"),
+        .iOS("10.0"),
     ],
     products: [
         .library(
             name: "markymark",
             targets: ["markymark"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.15.0")
+    ],
     targets: [
         .target(
             name: "markymark",
-            dependencies: [],
+            dependencies: ["Kingfisher", "KingfisherSwiftUI"],
             path: "markymark"),
     ],
     swiftLanguageVersions: [.v5]

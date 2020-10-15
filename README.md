@@ -11,7 +11,7 @@ Marky Mark is a parser written in Swift that converts markdown into native views
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-- iOS 8.0+ 
+- iOS 10.0+
 - Xcode 8.0+
 
 ## Installation

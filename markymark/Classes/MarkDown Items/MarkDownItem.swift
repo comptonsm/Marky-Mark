@@ -9,6 +9,7 @@ open class MarkDownItem {
 
     var lines: [String]
     var markDownItems: [MarkDownItem]?
+    var onAsyncComplete: MarkyMark.CompletionHandler?
 
     open var content: String
 

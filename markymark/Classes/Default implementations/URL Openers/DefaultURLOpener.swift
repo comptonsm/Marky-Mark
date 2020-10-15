@@ -23,11 +23,6 @@ public class DefaultURLOpener: URLOpener {
 
     public func open(url: URL) {
         guard let sharedApplication = sharedApplication else { return }
-        
-        if #available(iOS 10, *) {
-            _ = sharedApplication.delegate?.application?(sharedApplication, open: url, options: [:])
-        } else {
-            _ = sharedApplication.delegate?.application?(sharedApplication, handleOpen: url)
-        }
+        _ = sharedApplication.delegate?.application?(sharedApplication, open: url, options: [:])
     }
 }
