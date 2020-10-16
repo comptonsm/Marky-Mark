@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51E1ED8A2537B3AA0070361C /* MarkDownImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1ED892537B3AA0070361C /* MarkDownImageProcessor.swift */; };
 		OBJ_265 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_188 /* CacheSerializer.swift */; };
 		OBJ_266 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_189 /* DiskStorage.swift */; };
 		OBJ_267 /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_190 /* FormatIndicatedCacheSerializer.swift */; };
@@ -237,6 +238,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51E1ED892537B3AA0070361C /* MarkDownImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownImageProcessor.swift; sourceTree = "<group>"; };
 		"Kingfisher::Kingfisher::Product" /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kingfisher::KingfisherSwiftUI::Product" /* KingfisherSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KingfisherSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Marky-Mark::markymark::Product" /* markymark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = markymark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -475,6 +477,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51E1ED882537B3720070361C /* ImageProcessors */ = {
+			isa = PBXGroup;
+			children = (
+				51E1ED892537B3AA0070361C /* MarkDownImageProcessor.swift */,
+			);
+			path = ImageProcessors;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Default implementations */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +521,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_114 /* Configurations */,
+				51E1ED882537B3720070361C /* ImageProcessors */,
 				OBJ_119 /* MarkDownConverter.swift */,
 			);
 			path = Renderer;
@@ -905,7 +916,7 @@
 			path = Inline;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -919,7 +930,6 @@
 				OBJ_258 /* README.md */,
 				OBJ_259 /* markymark.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_60 /* UIView */ = {
@@ -1150,7 +1160,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_250 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1272,6 +1282,7 @@
 				OBJ_361 /* ContentfulFlavor.swift in Sources */,
 				OBJ_362 /* Flavor.swift in Sources */,
 				OBJ_363 /* InlineMarkDownItemFactory.swift in Sources */,
+				51E1ED8A2537B3AA0070361C /* MarkDownImageProcessor.swift in Sources */,
 				OBJ_364 /* AlphabeticListAttributedStringLayoutBlockBuilder.swift in Sources */,
 				OBJ_365 /* HeaderAttributedStringLayoutBlockBuilder.swift in Sources */,
 				OBJ_366 /* ListAttributedStringLayoutBlockBuilder.swift in Sources */,
