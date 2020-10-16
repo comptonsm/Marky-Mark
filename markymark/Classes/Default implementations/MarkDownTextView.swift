@@ -106,6 +106,7 @@ open class MarkDownTextView: UIView {
         }
 
         markDownItems = markyMark.parseMarkDown(markdownText) { [weak self] in
+            self?.markDownView?.removeFromSuperview()
             self?.viewConfiguration?.configureViews()
         }
         viewConfiguration?.configureViews()
